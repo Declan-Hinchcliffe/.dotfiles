@@ -1,0 +1,22 @@
+[alias]
+aliases = "!git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'"
+s  = status
+d  = diff
+f  = fetch
+co = checkout
+ca = commit --amend --no-edit
+r  = "!git reset --hard @{u}"
+fr = "!git f; git r"
+a  = add
+cm = commit -m
+p  = push -u origin HEAD
+
+[remote "origin"]
+prune = true
+
+[user]
+name = Adam Stringfellow
+email = adam.stringfellow@gmail.com
+
+[includeIf "gitdir:~/dev/fanduel/"]
+    path = ~/.gitconfig.fanduel
