@@ -15,8 +15,8 @@ p  = push -u origin HEAD
 prune = true
 
 [user]
-name = Adam Stringfellow
-email = adam.stringfellow@gmail.com
+name = Declan Hinchcliffe
+email = declan.hinchcliffe@googlemail.com
 
 [includeIf "gitdir:~/dev/fanduel/"]
     path = ~/.gitconfig.fanduel
